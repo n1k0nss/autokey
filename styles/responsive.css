@@ -1,0 +1,445 @@
+@media screen and (max-width: 1200px) {
+    .container {
+      max-width: 1200px;
+    }
+  }
+  
+  @media screen and (max-width: 1199px) {
+    .container {
+      max-width: 960px;
+      padding: 0 15px;
+    }
+    .header--container__phone{
+        display: none;
+    }
+
+    .section--contact__content-container{
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .section--contact__content-container h2{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .section--contact__content-container .contact-link-container{
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .vodafone-color{
+        display: inline-block;
+        margin-top: 5px;
+        margin-left: 0;
+    
+    }
+    .kyivstar-color{
+        display: inline-block;
+        margin-top: 5px;
+        margin-left: 0;
+    }
+
+    .menu-btn{
+        display: none;
+        }
+  }
+  
+  @media screen and (max-width: 991px) {
+    .container {
+      max-width: 720px;
+    }
+
+    body .burger-active{
+        overflow: hidden;
+    }
+
+    .flex-container{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        padding-top:20px;
+    }
+    /* Гамбургер иконка */
+    .menu-btn {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        z-index:2;
+        overflow: hidden;
+        opacity: 1;
+    }
+
+    .menu-btn{
+        display: block;
+    }
+    
+    .menu-btn span {
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #222222;
+        transition: all 0.5s;
+    }
+    
+    .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 5px);
+    }
+    .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 5px);
+    }
+    
+    /* гамбургер иконка, когда меню открыто */
+    .menu-btn.active span:nth-of-type(1) {
+      display: none;
+    }
+    .menu-btn.active span:nth-of-type(2) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(45deg);  
+    }
+    .menu-btn.active span:nth-of-type(3) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(-45deg); 
+    }
+    
+    /* Меню, которое будет появляться */
+    
+    .header--nav__site.active {
+        transform: translateX(0);
+        opacity:1;
+    }
+    .header--nav__site{
+        box-sizing:border-box;
+        opacity: 0;
+        height:403px;
+        border-top: 3px solid rgb(65, 65, 65);
+        box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+        background-color: #fff;
+        position:absolute;
+        top:160px;
+        left:0;
+        width:100%;
+        padding: 15px;
+        transform: translateX(-100%);
+        transition: all 0.2s ease;
+
+    }
+    .nav-list{
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        text-align: center;
+    }
+
+    .nav-list li{
+        margin-top:20px;
+        padding:40px 0px 40px 0;
+        transition:all 0.3s linear;
+    }
+
+    .nav-list li a{
+        margin-left: 0;
+    }
+
+    .nav-list>hr{
+        display: block;
+        width: 100%;
+    }
+
+    .nav-list li:hover{
+        background-color: #F5F5F5;
+    }
+    .nav-list li:first-child{
+        margin-top:0;
+    }
+
+    .footer--content__container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer--logo__container{
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+
+    .logo--link__footer{
+        text-align: center;
+        display: block;
+    }
+
+    .footer--navigation__container{
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+
+    .footer--nav__logo{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+        font-size: 34px;
+    }
+
+    .footer--nav__item{
+        text-align: center;
+    }
+
+    .footer--contact__container{
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-contacts{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 60px;
+    }
+
+    .footer-socials{
+        width: 50%;
+    }
+
+    .footer--contact__h2{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+        font-size: 26px;
+        text-transform: none;
+        text-align: center;
+    }
+
+    .footer--social__h2{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+        font-size: 26px;
+        text-transform: none;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+
+    .footer-social-list{
+        justify-content:center;
+    }
+    .footer--text{
+        text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 575px) {
+    .container {
+      width: 100%;
+      padding: 0 15px;
+    }
+
+    .footer--text{
+        text-align: center;
+    }
+
+    body .burger-active{
+        overflow: hidden;
+    }
+
+    .flex-container{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        padding-top:20px;
+    }
+    /* Гамбургер иконка */
+    .menu-btn {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        z-index:2;
+        overflow: hidden;
+        opacity: 1;
+    }
+
+    .menu-btn{
+        display: block;
+    }
+    
+    .menu-btn span {
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #222222;
+        transition: all 0.5s;
+    }
+    
+    .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 5px);
+    }
+    .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 5px);
+    }
+    
+    /* гамбургер иконка, когда меню открыто */
+    .menu-btn.active span:nth-of-type(1) {
+      display: none;
+    }
+    .menu-btn.active span:nth-of-type(2) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(45deg);  
+    }
+    .menu-btn.active span:nth-of-type(3) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(-45deg); 
+    }
+    
+    /* Меню, которое будет появляться */
+    
+    .header--nav__site.active {
+        transform: translateX(0);
+        opacity:1;
+    }
+    .header--nav__site{
+        box-sizing:border-box;
+        opacity: 0;
+        height:403px;
+        border-top: 3px solid rgb(65, 65, 65);
+        box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+        background-color: #fff;
+        position:absolute;
+        top:170px;
+        left:0;
+        width:100%;
+        padding: 15px;
+        transform: translateX(-100%);
+        transition: all 0.2s ease;
+
+    }
+    .nav-list{
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        text-align: center;
+    }
+
+    .nav-list li{
+        margin-top:20px;
+        padding:40px 0px 40px 0;
+        transition:all 0.3s linear;
+    }
+
+    .nav-list li a{
+        margin-left: 0;
+    }
+
+    .nav-list>hr{
+        display: block;
+        width: 100%;
+    }
+
+    .nav-list li:hover{
+        background-color: #F5F5F5;
+    }
+    .nav-list li:first-child{
+        margin-top:0;
+    }
+
+    .header--contact__bg-container{
+        height: 90px;
+    }
+
+    .contact--section__header{
+        flex-direction: column;
+        height: 90px;
+    }
+
+    .header--container__map{
+        margin-bottom: 10px;
+    }
+
+    .section--contact__inner-container {
+        margin-bottom: 25px;
+    }
+
+    .section--contact__content-container{
+        padding: 35px;
+    }
+
+    .inner-title{
+        font-size: 26px;
+        line-height: 1.5em;
+    }
+
+    .srv-n-adv__item img{
+        display: none;
+    }
+
+    .srv-n-adv__item{
+        padding-left: 20px;
+    }
+
+    .fa-cont-odd{
+        padding-left: 0;
+    }
+
+    .item-srv-adv-container{
+        width: 100%;
+    }
+
+    .h1__contact{
+        font-size: 26px;
+    }
+
+    .section--content__wrapper{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .section--content__container{
+        margin-left: 0;
+    }
+
+    .google--map__container iframe{
+        height: 300px;
+    }
+
+    .section--expert__title{
+        font-size: 26px;
+    }
+
+    .section--expert__content{
+        flex-direction: column;
+    }
+
+    .section--expert__txt-container{
+        margin-left: 0;
+        margin-bottom: 25px;
+    }
+
+    .section--expert__list{
+        margin-left: 0;
+    }
+
+    .footer--navigation__container{
+        margin-bottom: 25px;
+    }
+
+    .footer--contact__container{
+        flex-direction: column;
+    }
+
+    .footer-contacts{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+
+    .footer-socials{
+        width: 100%;
+    }
+    .footer-social-list{
+        justify-content:center;
+    }
+  }
